@@ -154,11 +154,11 @@ For back-end java format, please use Google Java Format and import it and **enab
 
 ## Boolean Properties for hiding menu and submenu
 
-    ![img.png](img.png)
+    ![img.png](https://github.com/iamryanmoreno/aemcodingassignment/blob/main/img.png)
 
 ## Snippet of Output
 
-    ![img_1.png](img_1.png)
+    ![img_1.png](https://github.com/iamryanmoreno/aemcodingassignment/blob/main/img_1.png)
 
 ## Test cases are located here
 
@@ -166,7 +166,7 @@ For back-end java format, please use Google Java Format and import it and **enab
 
 ## Code Scanning Result
 
-    ![img_2.png](img_2.png)
+    ![img_2.png](https://github.com/iamryanmoreno/aemcodingassignment/blob/main/img_2.png)
 
 
 
