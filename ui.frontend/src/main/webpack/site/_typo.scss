@@ -1,0 +1,63 @@
+// Phase 1
+// only for main area
+main {
+  font-family: $primary-font;
+  font-size: $font-size-base;
+  color: $text-black;
+
+  h1 {
+    font-family: $header-font;
+    font-size: $font-size-h1;
+    font-weight: 500;
+    line-height: $line-height-h1;
+
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-h1-lg;
+      line-height: $line-height-h1-lg;
+    }
+  }
+
+  h2 {
+    font-size: $font-size-h2;
+    font-weight: 600;
+
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-h2-lg;
+    }
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $primary-color;
+  }
+
+  ul,
+  ol {
+    padding-left: 1rem;
+  }
+
+  ul {
+    li {
+      &::marker {
+        color: $list-style-gray;
+      }
+    }
+  }
+
+  .lead {
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-lead-lg;
+      line-height: $line-height-lead-lg;
+    }
+  }
+
+  .sub-lead {
+    font-size: $font-size-sub-lead;
+    line-height: $line-height-sub-lead;
+  }
+}

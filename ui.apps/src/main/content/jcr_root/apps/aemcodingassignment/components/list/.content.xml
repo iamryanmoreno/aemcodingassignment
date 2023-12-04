@@ -4,4 +4,4 @@
     jcr:title="List"
     sling:resourceSuperType="core/wcm/components/list/v3/list"
     teaserDelegate="aemcodingassignment/components/teaser"
-    componentGroup="Singtel AEM Coding Assignment - Content"/>
+    componentGroup="AEM Coding Assignment - Content"/>

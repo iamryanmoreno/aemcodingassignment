@@ -4,4 +4,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Content Fragment"
     sling:resourceSuperType="core/wcm/components/contentfragment/v1/contentfragment"
-    componentGroup="Singtel AEM Coding Assignment - Content"/>
+    componentGroup="AEM Coding Assignment - Content"/>

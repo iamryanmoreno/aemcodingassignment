@@ -1,0 +1,28 @@
+// Utilities
+.py-xxl {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.border-orange {
+  border-color: $border-orange !important;
+}
+
+.w-150 {
+  width: 150% !important;
+}
+
+.translate-x-lg-10 {
+  @include media-breakpoint-up(lg) {
+    transform: translateX(10%);
+  }
+}
+
+.translate-x-25 {
+  transform: translateX(25%);
+}
+
+// AEM's screen reader only class
+.cmp-link__screen-reader-only {
+  @extend .visually-hidden;
+}

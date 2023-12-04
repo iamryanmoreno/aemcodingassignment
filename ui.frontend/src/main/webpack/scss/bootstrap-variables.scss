@@ -1,0 +1,10 @@
+// Phase 1
+// only for main area
+main {
+  --bs-heading-color: #{$text-black};
+  --bs-border-color: #{$border-gray};
+  --bs-border-radius: #{$border-radius};
+  --bs-link-color: #{$primary-color};
+  --bs-link-color-rgb: #{$primary-color};
+  --bs-link-hover-color-rgb: #{$primary-color};
+}

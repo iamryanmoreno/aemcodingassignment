@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-12-04T05:39:09.894+08:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/aemcodingassignment/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="header"
+        jcr:uuid="6a960128-9b04-4ce5-870e-f53a7e76c8d3"
+        sling:resourceType="aemcodingassignment/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemcodingassignment/components/container"
+            layout="responsiveGrid">
+            <header
+                jcr:created="{Date}2023-11-14T17:34:16.625+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-12-04T05:39:09.810+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemcodingassignment/components/header"
+                donateLabel="Donate "
+                donateOpenInNewWin="_self"
+                donatePath="/content/aemcodingassignment/sg/donation-form"
+                logo="/content/dam/touchprogram/release-1---donation/Touch-favicon-64x64.png"
+                logoAlt="[Logo ]"
+                menu="/content/aemcodingassignment/en"
+                openInNewWin="_self"
+                searchIcon="/content/dam/touchprogram/release-1---donation/header_search_icon.svg"
+                searchicon="/content/dam/touchprogram/release-1---donation/Touch-favicon-64x64.png"
+                searchIconAlt="Search"
+                searchPath="/content/aemcodingassignment/sg/donation-form"
+                searchPlaceHolderText="Search"
+                volunteerLabel="Volunteer "
+                volunteerOpenInNewWin="_self"
+                volunteerPath="/content/aemcodingassignment/sg/donation-form">
+                <secondaryLinks jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        openInNewWin="_self"
+                        pageClass="/content/experience-fragments/aemcodingassignment/en"
+                        pageLabel="Personal"
+                        pagePath="/content/aemcodingassignment/personal"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        openInNewWin="_self"
+                        pageLabel="Business"
+                        pagePath="/content/aemcodingassignment/business"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        openInNewWin="_self"
+                        pageLabel="Support"
+                        pagePath="/content/aemcodingassignment/support"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        openInNewWin="_self"
+                        pageLabel="About Us"
+                        pagePath="/content/aemcodingassignment/about-us"/>
+                </secondaryLinks>
+            </header>
+            <logo/>
+        </root>
+    </jcr:content>
+</jcr:root>

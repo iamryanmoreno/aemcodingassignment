@@ -4,4 +4,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Carousel"
     sling:resourceSuperType="core/wcm/components/carousel/v1/carousel"
-    componentGroup="Singtel AEM Coding Assignment - Content"/>
+    componentGroup="AEM Coding Assignment - Content"/>

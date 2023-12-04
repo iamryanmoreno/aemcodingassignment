@@ -11,3 +11,7 @@ $include "./default_filters.any"
 
 # Allow manifest.webmanifest files located in the content
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
+
+# Allow bin path access
+/0103 { /type "allow" /url "*/donationform.*.json"    }
+/0104 { /type "allow" /url "*/contexthub.pagedata.json"    }

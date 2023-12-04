@@ -1,6 +1,8 @@
-# Sample AEM project template
+This project is based on AEM-based application and is meant to be deployed on AEM Cloud as a service.arting point to develop your own functionality.
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+## SDK Reference
+
+    2023.7.12790.20230720T124230Z-230702
 
 ## Modules
 
@@ -12,8 +14,7 @@ The main parts of the template are:
 * ui.content: contains sample content using the components from the ui.apps
 * ui.config: contains runmode specific OSGi configs for the project
 * ui.frontend: an optional dedicated front-end build mechanism (Angular, React or general Webpack project)
-* ui.tests.cypress: Cypress based UI tests
-* ui.tests.wdio: Selenium based UI tests
+* ui.tests: Selenium based UI tests
 * all: a single content package that embeds all of the compiled modules (bundles and content packages) including any vendor dependencies
 * analyse: this module runs analysis on the project which provides additional validation for deploying into AEMaaCS
 
@@ -96,9 +97,17 @@ can be found here https://github.com/adobe/aemanalyser-maven-plugin
 
 ### UI tests
 
-They will test the UI layer of your AEM application using either Cypress or Selenium technology.
+They will test the UI layer of your AEM application using Selenium technology.
 
-Check README file in `ui.tests.cypress` or `ui.tests.wdio` module for more details.
+To run them locally:
+
+    mvn clean verify -Pui-tests-local-execution
+
+This default command requires:
+* an AEM author instance available at http://localhost:4502 (with the whole project built and deployed on it, see `How to build` section above)
+* Chrome browser installed at default location
+
+Check README file in `ui.tests` module for more details.
 
 ## ClientLibs
 
@@ -117,3 +126,46 @@ A ClientLib will consist of the following files and directories:
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+
+## Java Format
+
+For back-end java format, please use Google Java Format and import it and **enable** it on your IDE.
+
+    https://github.com/google/google-java-format
+
+## Node and NPM version
+
+    Node v16.17.0
+    NPM 8.15.0
+
+## Sample Content is located here:
+
+    /content/aemcodingassignment/en.html
+
+## Experience Fragment for Header is located here:
+
+    /content/experience-fragments/aemcodingassignment/sg/en/site/header/master.html
+
+## Code of Header Component is located here:
+
+    ui.apps/src/main/content/jcr_root/apps/aemcodingassignment/components/header
+
+## Boolean Properties for hiding menu and submenu
+
+    ![img.png](img.png)
+
+## Snippet of Output
+
+    ![img_1.png](img_1.png)
+
+## Test cases are located here
+
+    /aemcodingassignment/core/src/test/java/com/aemcodingassignment/core/models
+
+## Code Scanning Result
+
+    ![img_2.png](img_2.png)
+
+
+
+

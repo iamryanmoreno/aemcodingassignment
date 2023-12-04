@@ -1,0 +1,18 @@
+@mixin font-face($name, $style, $weight, $value) {
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src: url('../resources/fonts/#{$value}.woff2') format('woff2');
+  }
+}
+
+@include font-face('Jost', normal, 400, 'jost-latin-400-normal');
+@include font-face('Jost', normal, 500, 'jost-latin-500-normal');
+@include font-face('Jost', normal, 600, 'jost-latin-600-normal');
+@include font-face('Jost', normal, 700, 'jost-latin-700-normal');
+@include font-face('Montserrat', normal, 500, 'montserrat-latin-500-normal');
+@include font-face('FontAwesome', normal, 400, 'fontawesome-webfont');
+@include font-face('Yantramanav', normal, 300, 'yantramanav-300-normal');
+@include font-face('Plus Jakarta Sans', normal, 400, 'plus-jakarta-sans');

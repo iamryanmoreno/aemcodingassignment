@@ -7,16 +7,16 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.aca</groupId>
-        <artifactId>aemcodingassignment</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>com.aemcodingassignment</groupId>
+        <artifactId>aem-aemcodingassignment-project</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>aemcodingassignment.dispatcher.cloud</artifactId>
+    <artifactId>aem-aemcodingassignment-project.dispatcher.cloud</artifactId>
     <packaging>pom</packaging>
-    <name>Singtel AEM Coding Assignment - Dispatcher</name>
-    <description>HTTP &amp; Dispatcher configurations for Singtel AEM Coding Assignment</description>
+    <name>AEM Coding Assignment - Dispatcher</name>
+    <description>HTTP &amp; Dispatcher configurations for AEM Coding Assignment</description>
 
     <build>
         <plugins>
@@ -59,7 +59,7 @@
                                         </requireTextFileChecksum>
                                         <requireTextFileChecksum>
                                             <file>src/conf.d/dispatcher_vhost.conf</file>
-                                            <checksum>8be9f535a8a4d15bd895cebb2a9e03ad</checksum>
+                                            <checksum>b355146c776800f903f1bf8d164ad495</checksum>
                                             <type>md5</type>
                                             <message>There have been changes detected in a file which is supposed to be immutable according to https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#file-structure: src/conf.d/dispatcher_vhost.conf</message>
                                         </requireTextFileChecksum>
@@ -113,7 +113,7 @@
                                         </requireTextFileChecksum>
                                         <requireTextFileChecksum>
                                             <file>src/conf.dispatcher.d/filters/default_filters.any</file>
-                                            <checksum>33ab21977347e87a04dac059cd15fc06</checksum>
+                                            <checksum>8a99566bdabbc11061a6cbaf0f14cecc</checksum>
                                             <type>md5</type>
                                             <message>There have been changes detected in a file which is supposed to be immutable according to https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html#file-structure: src/conf.dispatcher.d/filters/default_filters.any</message>
                                         </requireTextFileChecksum>

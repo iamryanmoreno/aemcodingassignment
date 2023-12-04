@@ -2,10 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/conf/aemcodingassignment" mode="merge"/>
     <filter root="/content/aemcodingassignment" mode="merge"/>
-    <filter root="/content/dam/aemcodingassignment" mode="merge">
-        <exclude pattern="/content/dam/aemcodingassignment(/.*)?"/>
-        <include pattern="/content/dam/aemcodingassignment/jcr:content(/.*)?"/>
-    </filter>
     <filter root="/content/dam/aemcodingassignment/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/aemcodingassignment" mode="merge"/>
 </workspaceFilter>

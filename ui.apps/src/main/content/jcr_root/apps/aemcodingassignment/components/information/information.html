@@ -1,0 +1,46 @@
+<div data-sly-test="${wcmmode.edit || wcmmode.design}">
+  <h5>[Edit Information Component]</h5>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='aemcodingassignment.donationResult'}" />
+
+<div class="donation-result py-xxl" data-sly-use.model="com.aemcodingassignment.core.models.InformationModel">
+  <div class="container">
+    <div class="donation-result-layout">
+      <div class="content-block-1" data-sly-test="${properties.header || properties.description}">
+        <h1 class="mb-4" data-sly-test="${properties.header}">${properties.header @ context='html'}</h1>
+        <p data-sly-test="${properties.description}">${properties.description @ context='html'}</p>
+      </div>
+      <div class="content-block-2" data-sly-test="${properties.mobileImage || properties.desktopImage}">
+        <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+             data-sly-call="${clientlib.all @ categories='aemcodingassignment.donationBanner'}" />
+
+        <!-- This is donationBanner component -->
+        <div class="donation-banner">
+          <picture>
+            <source media="(max-width: 991px)"
+              srcset="${properties.mobileImage @ context='uri'}"
+              width="800" height="450"
+            />
+            <source media="(min-width: 992px)"
+              srcset="${properties.desktopImage @ context='uri'}"
+              width="1600" height="1600"
+            />
+            <img
+              src="${properties.mobileImage @ context='uri'}"
+              alt="Banner image"
+              width="800" height="450"
+            />
+          </picture>
+        </div>
+        <!-- end of donationBanner component -->
+      </div>
+      <div class="content-block-3" data-sly-test="${properties.subHeader || properties.subDescription || properties.link || properties.label}">
+        <h2 class="h3" data-sly-test="${properties.subHeader}">${properties.subHeader @ context='html'}</h2>
+        <p data-sly-test="${properties.subDescription}">${properties.subDescription @ context='html'}</p>
+        <p><a data-tag-ref="${properties.labelAlt}" href="${model.link}" class="btn btn-primary">${properties.label}</a></p>
+      </div>
+    </div>
+  </div>
+</div>

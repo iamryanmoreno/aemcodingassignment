@@ -13,8 +13,20 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
-<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-    <sly data-sly-call="${clientlib.css @ categories='aemcodingassignment.base'}"/>
-</sly>
+<sly data-sly-use.base="com.aemcodingassignment.core.models.BasePageModel">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta data-sly-test.generator="${base.generator}" name="Generator" content="${generator}"/>
+  <link data-sly-test="${base.canonicalURL}" rel="canonical" href="${base.canonicalURL @ context='html'}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta data-sly-test.keywords="${base.keywords}" name="keywords" content="${keywords}" />
 
-<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
+  <link rel="icon" href="/content/dam/aemcodingassignment/release-1---donation/Touch-favicon-64x64.png">
+  <sly data-sly-test="${base.scriptHeader}">
+    ${base.contentHeader @ context="unsafe"}
+  </sly>
+
+  <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='aemcodingassignment.base'}"/>
+  </sly>
+</sly>
+<!-- <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/> -->

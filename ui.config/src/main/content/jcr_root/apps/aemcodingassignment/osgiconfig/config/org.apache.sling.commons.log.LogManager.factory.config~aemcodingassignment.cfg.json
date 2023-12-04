@@ -1,6 +1,9 @@
 {
   "org.apache.sling.commons.log.names": [
-    "com.aca"
+	"com.aemcodingassignment.core.servlets.SubmitDonationServlet",
+	"com.aemcodingassignment.core.services.impl.RestServiceImpl",
+	"com.aemcodingassignment.core.servlets.GenerateCorrelationIdServlet",
+	"com.aemcodingassignment.core.servlets.CheckoutServlet"
   ],
   "org.apache.sling.commons.log.level": "INFO",
   "org.apache.sling.commons.log.file": "logs/error.log",

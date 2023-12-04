@@ -22,18 +22,18 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.aca</groupId>
-        <artifactId>aemcodingassignment</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>com.aemcodingassignment</groupId>
+        <artifactId>aem-aemcodingassignment-project</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aemcodingassignment.ui.frontend</artifactId>
+    <artifactId>aem-aemcodingassignment-project.ui.frontend</artifactId>
     <packaging>pom</packaging>
-    <name>Singtel AEM Coding Assignment - UI Frontend</name>
+    <name>AEM Coding Assignment - UI Frontend</name>
 
 
     <!-- ====================================================================== -->

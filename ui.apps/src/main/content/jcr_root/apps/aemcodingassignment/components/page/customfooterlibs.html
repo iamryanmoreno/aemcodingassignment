@@ -13,7 +13,12 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
-<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-    <sly data-sly-call="${clientlib.js @ categories='aemcodingassignment.base', async=true}"/>
+<sly data-sly-use.basePage="com.aemcodingassignment.core.models.BasePageModel">
+  <sly data-sly-test="${basePage.scriptFooter}">
+    ${basePage.contentFooter @ context='unsafe'}
+  </sly>
 </sly>
 
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories=['aemcodingassignment.base','aemcodingassignment.dependencies'], async=true}"/>
+</sly>

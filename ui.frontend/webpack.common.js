@@ -1,5 +1,6 @@
 'use strict';
 
+const fs = require('fs');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TSConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
@@ -16,15 +17,22 @@ const resolve = {
     })]
 };
 
+// Base
+const entries = {
+    site: SOURCE_ROOT + '/site/main.ts'
+};
+
+// Components
+const components = fs.readdirSync(SOURCE_ROOT + '/components');
+components.forEach((component) => {
+    entries[component] = SOURCE_ROOT + `/components/${component}/${component}.js`;
+});
+
 module.exports = {
     resolve: resolve,
-    entry: {
-        site: SOURCE_ROOT + '/site/main.ts'
-    },
+    entry: entries,
     output: {
-        filename: (chunkData) => {
-            return chunkData.chunk.name === 'dependencies' ? 'clientlib-dependencies/[name].js' : 'clientlib-site/[name].js';
-        },
+        filename: 'clientlib-[name]/[name].js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -56,13 +64,6 @@ module.exports = {
                     },
                     {
                         loader: 'postcss-loader',
-                        options: {
-                            plugins() {
-                                return [
-                                    require('autoprefixer')
-                                ];
-                            }
-                        }
                     },
                     {
                         loader: 'sass-loader',
@@ -74,7 +75,7 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
         ]
     },
     plugins: [

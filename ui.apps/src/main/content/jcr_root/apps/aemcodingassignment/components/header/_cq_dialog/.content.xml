@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Header"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <secondary
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Secondary"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <menu
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Main menu path"
+                                        name="./menu"
+                                        rootPath="/content/aemcodingassignment"
+                                        required="true"/>
+                                  <secondaryLinks
+                                      jcr:primaryType="nt:unstructured"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                      composite="{Boolean}true"
+                                      fieldDescription="Click 'Add' to add a new page link"
+                                      fieldLabel="Links">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./secondaryLinks">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <pageLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Main Menu Path"
+                                                    name="./menu"
+                                                    required="true"/>
+                                                <pageLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Page Label"
+                                                    name="./pageLabel"
+                                                    required="true"/>
+                                                <pageClass
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Page Class"
+                                                    name="./pageClass" />
+                                                <pagePath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Page Path"
+                                                    name="./pagePath"
+                                                    rootPath="/content/aemcodingassignment"
+                                                    required="true"/>
+                                                <openInNewWin
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="Check the checkbox to open link in new window"
+                                                    name="./openInNewWin"
+                                                    text="Open in new window?"
+                                                    uncheckedValue="_self"
+                                                    value="_blank"/>
+                                            </items>
+                                        </field>
+                                    </secondaryLinks>
+                                </items>
+                            </column>
+                        </items>
+                    </secondary>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

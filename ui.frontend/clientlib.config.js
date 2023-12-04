@@ -14,6 +14,7 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+const fs = require('fs');
 const path = require('path');
 
 const BUILD_DIR = path.join(__dirname, 'dist');
@@ -30,6 +31,8 @@ const CLIENTLIB_DIR = path.join(
   'clientlibs'
 );
 
+const libs = [];
+
 const libsBaseConfig = {
   allowProxy: true,
   serializationFormat: 'xml',
@@ -37,57 +40,42 @@ const libsBaseConfig = {
   jsProcessor: ['default:none', 'min:none']
 };
 
+// Clientlib Components
+const clientlibComponents = fs.readdirSync(BUILD_DIR);
+clientlibComponents.forEach((clientlibComponent) => {
+  const component = clientlibComponent.replace('clientlib-', '');
+  libs.push({
+    ...libsBaseConfig,
+    name: `clientlib-${component}`,
+    categories: [`aemcodingassignment.${component}`],
+    // dependencies: ['aemcodingassignment.dependencies'],
+    assets: {
+      // Copy entrypoint scripts and stylesheets into the respective ClientLib
+      // directories
+      js: {
+        cwd: `clientlib-${component}`,
+        files: ['**/*.js'],
+        flatten: false
+      },
+      css: {
+        cwd: `clientlib-${component}`,
+        files: ['**/*.css'],
+        flatten: false
+      },
+      // Copy all other files into the `resources` ClientLib directory
+      resources: {
+        cwd: `clientlib-${component}`,
+        files: ['**/*.*'],
+        flatten: false,
+        ignore: ['**/*.js', '**/*.css']
+      }
+    }
+  });
+});
+
 // Config for `aem-clientlib-generator`
 module.exports = {
   context: BUILD_DIR,
   clientLibRoot: CLIENTLIB_DIR,
-  libs: [
-    {
-      ...libsBaseConfig,
-      name: 'clientlib-dependencies',
-      categories: ['aemcodingassignment.dependencies'],
-      assets: {
-        // Copy entrypoint scripts and stylesheets into the respective ClientLib
-        // directories
-        js: {
-          cwd: 'clientlib-dependencies',
-          files: ['**/*.js'],
-          flatten: false
-        },
-        css: {
-          cwd: 'clientlib-dependencies',
-          files: ['**/*.css'],
-          flatten: false
-        }
-      }
-    },
-    {
-      ...libsBaseConfig,
-      name: 'clientlib-site',
-      categories: ['aemcodingassignment.site'],
-      dependencies: ['aemcodingassignment.dependencies'],
-      assets: {
-        // Copy entrypoint scripts and stylesheets into the respective ClientLib
-        // directories
-        js: {
-          cwd: 'clientlib-site',
-          files: ['**/*.js'],
-          flatten: false
-        },
-        css: {
-          cwd: 'clientlib-site',
-          files: ['**/*.css'],
-          flatten: false
-        },
-
-        // Copy all other files into the `resources` ClientLib directory
-        resources: {
-          cwd: 'clientlib-site',
-          files: ['**/*.*'],
-          flatten: false,
-          ignore: ['**/*.js', '**/*.css']
-        }
-      }
-    }
-  ]
+  libs: libs
 };

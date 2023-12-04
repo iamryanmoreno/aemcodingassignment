@@ -1,0 +1,18 @@
+image: atlassian/default-image:3
+
+pipelines:
+    branches:
+      main:
+        - step:
+           script:
+             - git remote add sync https://$username:$password@git.cloudmanager.adobe.com/touch/aemcodingassignment/
+             - git checkout main
+             - git pull
+             - git push sync main
+      develop:
+        - step:
+            script:
+              - git remote add sync https://$username:$password@git.cloudmanager.adobe.com/touch/aemcodingassignment/
+              - git checkout develop
+              - git pull
+              - git push sync develop

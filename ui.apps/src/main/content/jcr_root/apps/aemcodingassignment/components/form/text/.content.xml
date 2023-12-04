@@ -3,4 +3,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Form Text"
     sling:resourceSuperType="core/wcm/components/form/text/v2/text"
-    componentGroup="Singtel AEM Coding Assignment - Form"/>
+    componentGroup="AEM Coding Assignment - Form"/>

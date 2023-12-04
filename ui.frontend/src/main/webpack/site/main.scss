@@ -1,5 +1,19 @@
+// Import customized Bootstrap config
+@import "../scss/bootstrap-custom";
 
-@import 'variables';
-@import 'base';
-@import '../components/**/*.scss';
-@import './styles/*.scss';
+// Configurations
+@import "../scss/fonts";
+@import "../scss/variables";
+@import "../scss/bootstrap-variables";
+@import "../scss/mixins";
+@import "../scss/functions";
+
+// AEM reset
+@import "reset";
+
+// Site (base) styles
+@import "grid";
+@import "typo";
+@import "form";
+@import "button";
+@import "utils";

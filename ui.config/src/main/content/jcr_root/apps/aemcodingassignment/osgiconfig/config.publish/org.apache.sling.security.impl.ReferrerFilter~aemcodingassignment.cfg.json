@@ -1,0 +1,19 @@
+{
+  "allow.empty": false,
+  "allow.hosts": [
+    "touch-uat.org.sg",
+    "touch.org.sg"
+  ],
+  "allow.hosts.regexp": [
+    ""
+  ],
+  "filter.methods": [
+    "PUT",
+    "DELETE",
+    "COPY",
+    "MOVE"
+  ],
+  "exclude.agents.regexp": [
+    ""
+  ]
+}

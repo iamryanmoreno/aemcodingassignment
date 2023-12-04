@@ -1,0 +1,29 @@
+.btn {
+  padding: 0.875rem 1.875rem;
+  border-radius: $border-radius-btn;
+  font-weight: $font-weight-700;
+  letter-spacing: 1.40px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  --bs-btn-bg: #{$primary-color};
+  --bs-btn-border-color: #{$primary-color};
+  --bs-btn-hover-bg: #{$primary-color};
+  --bs-btn-hover-border-color: #{$primary-color};
+  --bs-btn-active-bg: #{$primary-color};
+  --bs-btn-active-border-color: #{$primary-color};
+  --bs-btn-disabled-bg: #{$primary-color};
+  --bs-btn-disabled-border-color: #{$primary-color};
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #{$primary-color};
+  --bs-btn-border-color: #{$primary-color};
+  --bs-btn-hover-bg: #{$primary-color};
+  --bs-btn-hover-border-color: #{$primary-color};
+  --bs-btn-active-bg: #{$primary-color};
+  --bs-btn-active-border-color: #{$primary-color};
+  --bs-btn-disabled-color: #{$primary-color};
+  --bs-btn-disabled-border-color: #{$primary-color};
+}

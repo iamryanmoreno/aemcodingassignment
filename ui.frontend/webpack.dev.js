@@ -26,6 +26,7 @@ module.exports = env => {
                 context: ['/content', '/etc.clientlibs'],
                 target: 'http://localhost:4502',
             }],
+            allowedHosts: 'all',
             client: {
                 overlay: {
                     errors: true,

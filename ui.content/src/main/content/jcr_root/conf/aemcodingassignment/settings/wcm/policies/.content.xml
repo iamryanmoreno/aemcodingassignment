@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <rep:policy/>
@@ -13,14 +13,26 @@
                         jcr:title="Content Form"
                         sling:resourceType="wcm/core/components/policy/policy"
                         components="[/apps/aemcodingassignment/components/form/button,/apps/aemcodingassignment/components/form/hidden,/apps/aemcodingassignment/components/form/options,/apps/aemcodingassignment/components/form/text]">
-                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <jcr:content
+                            cq:isDelivered="{Boolean}true"
+                            cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                            cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                            cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                            cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                            cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                            cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                            cq:lastReplicationAction="Activate"
+                            cq:lastReplicationAction_preview="Activate"
+                            cq:lastReplicationAction_publish="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                            jcr:primaryType="nt:unstructured"/>
                     </form-container>
                 </container>
             </form>
             <languagenavigation jcr:primaryType="nt:unstructured">
                 <policy_xfm
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Singtel AEM Coding Assignment Language Navigation - Experience Fragment"
+                    jcr:title="AEM Coding Assignment Language Navigation - Experience Fragment"
                     sling:resourceType="wcm/core/components/policy/policy"
                     navigationRoot="/content/aemcodingassignment"
                     structureDepth="1">
@@ -34,16 +46,28 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
-                    enableAssetDelivery="true"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
+                    enableAssetDelivery="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
                     titleValueFromDAM="true"
                     uuidDisabled="true">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <plugins jcr:primaryType="nt:unstructured">
                         <crop
                             jcr:primaryType="nt:unstructured"
@@ -81,7 +105,19 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Text"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <rtePlugins jcr:primaryType="nt:unstructured">
                         <paraformat
                             jcr:primaryType="nt:unstructured"
@@ -174,7 +210,19 @@
                     allowedTypes="h1"
                     linkDisabled="true"
                     type="h1">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_641475696923109>
                 <policy_641528232375303
                     jcr:description="Allows all sizes, but not H1, which is reserved for the main page title."
@@ -184,7 +232,19 @@
                     allowedTypes="[h2,h3,h4,h5,h6]"
                     linkDisabled="false"
                     type="h2">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
@@ -194,7 +254,19 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Header"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_header>
                 <policy_footer
                     cq:styleDefaultElement="footer"
@@ -202,7 +274,19 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Footer"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_footer>
             </experiencefragment>
             <container jcr:primaryType="nt:unstructured">
@@ -211,8 +295,20 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Singtel AEM Coding Assignment - Content,/apps/aemcodingassignment/components/form/container,group:Singtel AEM Coding Assignment - Structure]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    components="[group:AEM Coding Assignment - Content,/apps/aemcodingassignment/components/form/container,group:AEM Coding Assignment - Structure]">
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575024218483
@@ -238,11 +334,26 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2023-10-20T06:53:47.822Z"
+                    jcr:lastModifiedBy="iamryanmoreno@gmail.com"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Page Content"
+                    jcr:title="Touch - Donation Page"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Singtel AEM Coding Assignment - Content,/apps/aemcodingassignment/components/form/container]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    components="[/libs/wcm/foundation/components/responsivegrid,group:Touch CMS - Content,/apps/aemcodingassignment/components/text,/apps/aemcodingassignment/components/title]"
+                    layoutDisabled="false">
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-10-20T06:58:59.460Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-10-20T06:58:59.460Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575030255082
@@ -272,15 +383,42 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Main"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2023-07-13T09:22:10.282Z"
+                    jcr:lastModifiedBy="iamryanmoreno@gmail.com"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Singtel AEM Coding Assignment - Content,/apps/aemcodingassignment/components/form/container]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    components="[group:Touch CMS - Content]"
+                    layoutDisabled="false">
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575024218483
@@ -312,7 +450,19 @@
                     jcr:title="Content Teaser"
                     sling:resourceType="wcm/core/components/policy/policy"
                     titleType="h3">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_1575031387650>
             </teaser>
             <download jcr:primaryType="nt:unstructured">
@@ -326,28 +476,46 @@
                     displayFormat="true"
                     displaySize="true"
                     titleType="h3">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-09-22T08:50:07.372Z"
+                        cq:lastReplicatedBy="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="iamryanmoreno@gmail.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_1575032193319>
             </download>
             <page jcr:primaryType="nt:unstructured">
                 <policy
                     jcr:description="Includes the required client libraries."
+                    jcr:lastModified="{Date}2023-10-17T02:04:26.041Z"
+                    jcr:lastModifiedBy="xieyiqiong@convertium.com"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Generic Page"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[aemcodingassignment.dependencies,aemcodingassignment.site]"
-                    clientlibsJsHead="aemcodingassignment.dependencies">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    clientlibs="[aemcodingassignment.dependencies,aemcodingassignment.site,aemcodingassignment.donationResult,aemcodingassignment.donationBanner,aemcodingassignment.donationForm,aemcodingassignment.formRadioBox,aemcodingassignment.formButton,aemcodingassignment.headerComponent,aemcodingassignment.footerComponent]"
+                    clientlibsAsync="false">
+                    <jcr:content
+                        cq:isDelivered="{Boolean}true"
+                        cq:lastReplicated="{Date}2023-10-17T02:04:47.879Z"
+                        cq:lastReplicated_preview="{Date}2023-09-22T08:52:22.782Z"
+                        cq:lastReplicated_publish="{Date}2023-10-17T02:04:47.879Z"
+                        cq:lastReplicatedBy="xieyiqiong@convertium.com"
+                        cq:lastReplicatedBy_preview="iamryanmoreno@gmail.com"
+                        cq:lastReplicatedBy_publish="xieyiqiong@convertium.com"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_preview="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
         </components>
     </aemcodingassignment>
-    <wcm jcr:primaryType="nt:unstructured">
-        <foundation jcr:primaryType="nt:unstructured">
-            <components jcr:primaryType="nt:unstructured">
-                <responsivegrid jcr:primaryType="nt:unstructured">
-                            </responsivegrid>
-            </components>
-        </foundation>
-    </wcm>
 </jcr:root>

@@ -1,0 +1,10 @@
+<sly data-sly-use.base="com.aemcodingassignment.core.models.BasePageModel">
+  <sly data-sly-test="${base.scriptBody}">
+    ${base.contentBody @ context='unsafe'}
+  </sly>
+</sly>
+
+<sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+     data-sly-repeat.child="${templatedContainer.structureResources}"
+     data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+
