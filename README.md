@@ -1,8 +1,10 @@
-This project is based on AEM-based application and is meant to be deployed on AEM Cloud as a service.arting point to develop your own functionality.
+This project is based on **AEM-based application** and is meant to be deployed on **AEM Cloud as a service**.
 
 ## SDK Reference
 
     2023.7.12790.20230720T124230Z-230702
+    https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-sdk-2023.7.12790.20230720T124230Z-230702.zip
+
 
 ## Modules
 
